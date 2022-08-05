@@ -22,6 +22,8 @@
     ],
     "require": {
         "php": "^8.0",
+        "filament/filament": "^2.0",
+        "illuminate/validation": "^9.0",
         "laravel-zero/framework": "^9.0",
         "nunomaduro/termwind": "^1.3"
     },
