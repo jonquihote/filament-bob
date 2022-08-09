@@ -2,6 +2,7 @@
 
 namespace App\Commands\Concerns;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
@@ -25,7 +26,7 @@ trait CanManipulateFilesExtension
     {
         $config = $this->getConfigArray();
 
-        return $config['paths.views'] ?? config('bob.paths.views');
+        return Arr::get($config, 'paths.views') ?? config('bob.paths.views');
     }
 
     protected function getConfigFile(): string
