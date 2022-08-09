@@ -25,7 +25,7 @@ trait CanManipulateFilesExtension
     {
         $config = $this->getConfigArray();
 
-        return $config['paths.view'] ?? config('bob.paths.views');
+        return $config['paths.views'] ?? config('bob.paths.views');
     }
 
     protected function getConfigFile(): string
