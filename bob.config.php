@@ -6,4 +6,8 @@ return [
 
     'view_namespace' => '',
 
+    'paths' => [
+        'views' => 'resources/views',
+    ],
+
 ];
