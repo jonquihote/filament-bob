@@ -94,7 +94,7 @@ class MakePageCommand extends Command
         ])->implode(DIRECTORY_SEPARATOR);
 
         $viewPath = collect([
-            config('bob.paths.views'),
+            $this->getViewPath(),
             (string) Str::of($view)
                 ->replace('.', '/')
                 ->append('.blade.php'),
